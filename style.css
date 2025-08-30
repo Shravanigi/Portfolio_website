@@ -1,0 +1,180 @@
+<style>
+     /* body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f5; 
+    color: #334a5d; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+} */
+    .navbar {
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+        font-weight: 1000;
+        color: #5a79a3 !important; /* Muted blue for brand */
+    }
+    .nav-link {
+        font-weight: 700;
+        color: #334a5d !important;
+        transition: color 0.3s ease;
+    }
+    .nav-link.active, .nav-link:hover {
+        color: #5a79a3 !important; /* Muted blue for active/hover */
+    }
+    .hero-section {
+        background: linear-gradient(135deg, #4a698a, #7f9ab7); /* Cool blue gradient */
+        color: #ffffff;
+        padding: 80px 0;
+        text-align: center;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid #ffffff;
+        object-fit: cover;
+    }
+    .hero-section h1 {
+        font-weight: 700;
+        font-size: 3.5rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .hero-section p {
+        font-size: 1.25rem;
+        opacity: 0.9;
+    }
+    .section-heading {
+        text-align: center;
+        font-weight: 600;
+        color: #5a79a3; /* Muted blue for headings */
+        margin-bottom: 40px;
+    }
+    .section-content {
+        background-color: #ffffff;
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+    }
+    .card {
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    .skill-icon {
+        font-size: 2.5rem;
+        color: #3498db; /* Light blue accent for icons */
+        margin-bottom: 10px;
+    }
+    .timeline-item {
+        position: relative;
+        padding-left: 35px;
+        border-left: 2px solid #5a79a3; /* Muted blue timeline line */
+    }
+    .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #5a79a3; /* Muted blue for timeline circles */
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+    }
+    .contact-form .form-control {
+        border-radius: 10px;
+    }
+    .contact-form .btn-primary {
+        border-radius: 10px;
+        background-color: #5a79a3;
+        border-color: #5a79a3;
+        color: #ffffff;
+    }
+    .contact-form .btn-primary:hover {
+        background-color: #4a698a;
+        border-color: #4a698a;
+    }
+    .contact-card {
+        background-color: #f2f6f9;
+        padding: 20px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .contact-card a {
+        color: #334a5d;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+    .contact-card a:hover {
+        color: #5a79a3;
+    }
+    .contact-icon {
+        font-size: 2.5rem;
+        color: #5a79a3;
+        margin-bottom: 10px;
+    }
+
+     body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f5; 
+    color: #334a5d; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+    footer {
+        background-color: #334a5d; /* Dark charcoal footer */
+        color: #eef2f5;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: auto;
+    }
+     footer .social-icons a {
+        color: #eef2f5;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+    /* Updated the hover color to a more visible light blue */
+    footer .social-icons a:hover {
+        color: #3498db;
+    }
+
+    /* New styles for horizontal project cards */
+    .project-container {
+        gap: 1.5rem; /* Adds space between the cards */
+        padding-bottom: 1rem;
+    }
+
+    .project-card {
+        flex-shrink: 0; /* Prevents cards from shrinking */
+        width: 100%; /* Default to full width on mobile */
+        max-width: 350px; /* Max width to keep them readable on larger screens */
+    }
+
+    /* Responsive adjustments for larger screens */
+    @media (min-width: 768px) {
+        .project-card {
+            width: 50%; /* On tablets, show two cards per screen */
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .project-card {
+            width: 33.333%; /* On desktops, show three cards per screen */
+        }
+    }
+</style>
